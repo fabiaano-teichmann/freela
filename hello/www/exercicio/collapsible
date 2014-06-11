@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>jQuery Mobile - Atributos</title> 
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet"  href= "bibliotecas/jquery.mobile-1.4.2.min.css">
+      <script src="bibliotecas/jquery1.11.0.min.js"></script>
+      <script src="bibliotecas/jquery.mobile-1.4.2.min.js"></script>
+</head>
+
+     
+   </head> 
+   <body> 
+
+        
+
+      <div data-role="page" id="buttom">
+       
+         <div data-role="header">
+           <h1> Buttom</h1>
+           <a href="atributos-jquery.html">Início</a> 
+         </div>
+       
+         <div role="main" class="ui-content"> 
+   
+          
+            <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
+    <thead>
+      <tr class="ui-bar-d">
+        
+        
+        <th data-priority="3">Atributo</th>
+        <th> Objetivo </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> data-corners </td>
+        <td> true false </td>
+         </tr>
+          
+       
+        
+    <tr>
+        <td> data-icon </td>
+        <td> home | delete | plus | arrow-u | arrow-d | carat-l | carat-t | carat-r | carat-b | check | gear | grid | star | custom | arrow-r | arrow-l | minus | refresh | forward | back | alert | info | search
+         </td>
+    </tr>
+
+    <tr>
+      <td> data-iconpos  </td>
+      <td> left | right | top | bottom | notext</td>
+    </tr>
+
+    <tr>
+      <td>data-inline </td>
+      <td> true | false</td>
+    </tr>
+
+    <tr>
+      <td>data-mini</td>
+      <td>true | false –  versão compacta</td>
+    </tr>
+    <tr>
+      <tr>data-shadow</tr>
+      <td>true | false</td>
+   </tr>
+
+   <tr>
+      <td>data-theme</td>
+      <td>Cartaz de amostra a-z
+</td>
+   </tr>
+
+              
+      </table>
+     </body>
+   </html>              
+         

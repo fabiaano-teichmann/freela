@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>jQuery Mobile - Transições de página</title> 
+      <meta charset="utf-8"/>
+      
+      <!--  O viewport é a área onde seu website aparece. 
+            É a área que você se preocupa se o vai ou não caber na hora da criação. 
+            A tag Viweport especifica como o browser deve considerar o nivel de zoom 
+            Se não for usado, muitos browsers usarão uma página "virtual" de 900 pixels
+            para manter a compatibilidade com sites desktop -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+     
+   <link href="bibliotecas/jquery.mobile-1.4.2.min.css" rel="stylesheet" >
+   <script src="bibliotecas/jquery-1.11.0.min.js"></script>
+   <script src="bibliotecas/jquery.mobile-1.4.2.min.js"></script>
+
+      <script type="text/JavaScript">
+         transitions = ["fade","pop","flip","turn","flow","slidefade","slideup","slidedown","none"];
+         function repete() {
+            document.getElementById('teste').innerHTML = "";
+            for (i = 0; i < transitions.length; i++) {
+               document.getElementById('teste').innerHTML += "<div data-role='collapsible'>" +
+                     "<h2>" + transitions[i] + "</h2>" +
+                     "<p><a href='#about' data-transition='" + transitions[i] + "'>Sobre...</a></p>" +
+                  "</div>";
+            }
+         }
+      </script>
+   </head> 
+   <body> 
+      <div data-role="page" id="home">
+
+         <div data-role="header">
+            <h1>Page Title</h1>
+         </div>
+       
+         <div role="main" class="ui-content"> 
+            <div data-role="controlgroup" align="center" class="ui-collapsible-set ui-corner-all">
+               <div data-role="collapsible-set" id="teste">
+                  <script type="text/JavaScript">
+                     repete();
+                  </script>
+               </div>
+            </div>
+         </div>
+       
+         <div data-role="footer">
+            <h4>Programação para Dispositivos Móveis</h4>
+         </div>
+        
+      </div>
+      
+      <div data-role="page" id="about">
+       
+         <div data-role="header">
+           <h1>Página "Sobre" do app...</h1>
+         </div>
+       
+         <div role="main" class="ui-content"> 
+           <p>Isto funciona! <a href="#home">Início</a></p>    
+         </div>
+       
+      </div>      
+   </body>
+</html>

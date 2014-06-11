@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>jQuery Mobile - Atributos</title> 
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet"  href= "bibliotecas/jquery.mobile-1.4.2.min.css">
+      <script src="bibliotecas/jquery1.11.0.min.js"></script>
+      <script src="bibliotecas/jquery.mobile-1.4.2.min.js"></script>
+</head>
+
+      
+   </head> 
+   <body> 
+
+        
+
+      <div data-role="page" id="popud">
+       
+         <div data-role="header">
+           <h1> Page</h1>
+           <a href="atributos-jquery.html">Início</a> 
+         </div>
+       
+         <div role="main" class="ui-content"> 
+   
+          
+            <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="mostrar mais coluna..." data-column-popup-theme="a">
+    <thead>
+      <tr class="ui-bar-d">
+        
+        
+        <th data-priority="3">Atributo</th>
+        <th> Objetivo </th>
+      </tr>
+    </thead>
+          <tr>
+        <td>data-dismissibler </td>
+        <td> True false Se definido para fechamento falsos impede pop-up clicando fora do contexto ou pressionando a tecla Esc. </td>
+         </tr>
+          
+       
+        
+    <tr>
+        <td> Data-history</td>
+        <td> true | false - Define se o pop-up cria um item de histórico do navegador quando se abre. Se definido como false, não vai criar um item de história, e, assim, não ser closeable via botão "Voltar" do navegador.   </td>
+    </tr>
+
+    <tr>
+      <td> Data-overlay-theme</td>
+      <td> Encarte de A /Z</td>
+    </tr>
+
+    <tr>
+      <td>Data-position-to </td>
+      <td> origem | janela | seletor - "origem" indica que o pop-up deve ser centrado sobre o link que abre."Janela" indica que  ele deve ser centralizado na janela do navegador. Se você der um seletor jQuery, será centrado sobre o primeiro elemento retornado pelo seletor, se esse elemento é visível. Caso contrário, ele será centralizado na janela do navegador. </td>
+    </tr>
+
+    <tr>
+      <td>Data-shadow</td>
+      <td>True False</td>
+    </tr>
+    <tr>
+      <td>Data-url</td>
+      <td>url - Valor para atualizar o URL, em vez da URL utilizada para solicitar a página</td>
+   </tr>
+   <tr>
+     <td>Data-theme</td>
+     <td>Encarte de A Z</td>
+   </tr>
+
+      </table>
+     </body>  
+   </html>              
+         
